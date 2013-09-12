@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<extension key="org.civicoop.parseaddressnl" type="module">
+  <file>parseaddressnl</file>
+  <name>ParseAddressNL</name>
+  <description>This extension parses the address to Dutch format.</description>
+  <license>Academic Free License v3.0</license>
+  <maintainer>
+    <author>CiviCooP</author>
+    <email>helpdesk@civicoop.org</email>
+  </maintainer>
+  <releaseDate>2013-09-05</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.3</ver>
+  </compatibility>
+  <comments>This module is being developed and tested</comments>
+  <civix>
+    <namespace>CRM/Parseaddressnl</namespace>
+  </civix>
+</extension>
