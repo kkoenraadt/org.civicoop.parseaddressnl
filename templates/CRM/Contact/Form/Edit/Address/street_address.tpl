@@ -26,10 +26,6 @@
 
 {$form.address.$blockId.street_address.value|substr:0:1}
 
-
-
-test: {$form.address.$blockId.street_address|@print_r}
-
 {if !empty($form.address.$blockId.street_address)}
     <tr id="streetAddress_{$blockId}">
         <td colspan="2">
@@ -70,7 +66,6 @@ test: {$form.address.$blockId.street_address|@print_r}
 {literal}
 <script type="text/javascript">
 function processAddressFields( name, blockId, loadData ) {
-
   if ( loadData ) {
             var allAddressValues = {/literal}{if $allAddressFieldValues}{$allAddressFieldValues}{else}''{/if}{literal};
 
@@ -81,7 +76,7 @@ function processAddressFields( name, blockId, loadData ) {
       var streetNumber  = eval( "allAddressValues.street_number_"  + blockId );
       if (streetNumber === null) streetNumber = '';
       var streetAddressNL = eval( "allAddressValues.street_name_"    + blockId ) + " " + 
-              eval( "allAddressValues.street_number_"  + blockId ) +
+              eval( "allAddressValues.street_number_"  + blockId ) + " " +
               eval( "allAddressValues.street_unit_"    + blockId );
       if (streetAddressNL === null) streetAddressNL = '';
       

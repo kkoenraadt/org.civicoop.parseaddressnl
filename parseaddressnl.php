@@ -242,6 +242,13 @@ function parseaddressnl_civicrm_pre( $op, $objectName, $objectId, &$objectRef ) 
  *
  */
 function parseaddressnl_civicrm_buildForm( $formName, &$form ) {  
+  //print_r($formName);
+  //echo(json_encode(array('form_name' => $formName)));
+  
+  
+    if( $formName == "CRM_Contact_Form_Inline_Address" ){
+      
+    }
     if ( $formName == "CRM_Contact_Form_Contact" ) {
         $values = $form->getVar('_values' );
         
